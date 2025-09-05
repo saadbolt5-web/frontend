@@ -3,6 +3,16 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+        heading: ['Poppins', 'sans-serif'],
+      },
+      fontSize: {
+        'heading-xl': ['2.5rem', { fontWeight: '700' }],
+        'heading-lg': ['1.875rem', { fontWeight: '600' }],
+        'body-lg': ['1.125rem', { fontWeight: '400' }],
+        'body-sm': ['0.875rem', { fontWeight: '400' }],
+      },
       colors: {
         navy: {
           50: '#f0f4f8',
@@ -19,11 +29,11 @@ export default {
         yellow: {
           400: '#fbbf24',
           500: '#ffd500',
-        }
+        },
       },
       backdropBlur: {
         xs: '2px',
-      }
+      },
     },
   },
   plugins: [],
